@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="174dp"
-        android:layout_height="70dp"
+        android:layout_width="165dp"
+        android:layout_height="65dp"
         android:layout_marginStart="41dp"
         android:layout_marginTop="87dp"
         android:background="@drawable/custom_button1"
@@ -69,8 +69,9 @@
 
     <TextView
         android:id="@+id/register"
-        android:layout_width="78dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:layout_marginBottom="50dp"
         android:alpha="69"
         android:clickable="true"
