@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "572911160768",
+    "firebase_url": "https://geofence-2dc3b.firebaseio.com",
+    "project_id": "geofence-2dc3b",
+    "storage_bucket": "geofence-2dc3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572911160768:android:808aa2ec7e9014e6988c25",
+        "android_client_info": {
+          "package_name": "com.hackaday.geofence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572911160768-63cjbl8l382mbjfntmkgq1uej9mbqu4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackaday.geofence",
+            "certificate_hash": "083585ad47976c25368cc8a132075aa6ddc981a5"
+          }
+        },
+        {
+          "client_id": "572911160768-rt5mr5l3qnup0f53gcfnk3d4kvumsdn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6sRRbTAZR7f53GFb2UoewKeh0LlgSg70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572911160768-rt5mr5l3qnup0f53gcfnk3d4kvumsdn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
