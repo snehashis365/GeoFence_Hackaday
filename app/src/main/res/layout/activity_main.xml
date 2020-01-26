@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_main"
+    android:background="@drawable/background_new"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/regular"
         android:shadowColor="#000000"
         android:shadowDx="0"
@@ -22,66 +22,69 @@
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/context"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
         android:alpha="75"
         android:fontFamily="@font/light"
         android:shadowColor="#000000"
         android:text="Let's get started"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="22sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="165dp"
         android:layout_height="65dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="87dp"
         android:background="@drawable/custom_button1"
         android:hapticFeedbackEnabled="true"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/context" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="1dp"
         android:alpha="69"
         android:fontFamily="@font/regular"
         android:gravity="center"
         android:text="Not a user?"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/context" />
 
     <TextView
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
         android:alpha="69"
         android:clickable="true"
         android:fontFamily="@font/regular"
         android:gravity="center"
         android:text="REGISTER"
-        android:textColor="#FF04D5"
+        android:textColor="#FF0000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/context" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

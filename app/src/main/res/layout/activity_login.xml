@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_auth"
+    android:background="@drawable/background_new"
     tools:context=".login">
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="120dp"
         android:fontFamily="@font/regular"
         android:shadowColor="#000000"
         android:shadowDx="0"
@@ -22,28 +20,30 @@
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/context"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
         android:alpha="75"
         android:fontFamily="@font/light"
         android:shadowColor="#000000"
         android:text="Good to see you again"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
         android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="165dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="120dp"
         android:background="@drawable/custom_button1"
         android:text="Login"
         android:textAllCaps="false"
@@ -52,54 +52,53 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:alpha="69"
         android:fontFamily="@font/regular"
         android:gravity="center"
         android:text="Forgot Password?"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/context"
+        app:layout_optimizationLevel="chains" />
 
     <TextView
         android:id="@+id/forgot"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
         android:alpha="69"
         android:clickable="true"
         android:contextClickable="true"
         android:fontFamily="@font/regular"
         android:gravity="center"
         android:text="RESET"
-        android:textColor="#FF04D5"
+        android:textColor="#FF0000"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintGuide_begin="399dp"
         app:layout_constraintGuide_percent="0.5
-"
-        app:layout_constraintGuide_begin="399dp" />
+" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="320dp"
         android:layout_height="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/custom_edit_text1"
         android:ems="10"
         android:gravity="center"
@@ -107,13 +106,13 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/context" />
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="320dp"
         android:layout_height="60dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_edit_text1"
         android:ems="10"
         android:gravity="center"
