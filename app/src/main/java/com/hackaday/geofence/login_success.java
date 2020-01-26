@@ -25,7 +25,7 @@ public class login_success extends AppCompatActivity {
 
     ImageView image;
     TextView greet;
-    Button logout;
+    Button logout,upload;
 
     GoogleSignInClient mGoogleSignInClient;
 
@@ -63,6 +63,18 @@ public class login_success extends AppCompatActivity {
                 logout();
             }
         });
+
+        upload = findViewById(R.id.upload);
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+                Intent upload = new Intent(login_success.this, com.hackaday.geofence.upload.class);
+                startActivity(upload);
+            }
+        });
+
     }
 
     private void logout() {

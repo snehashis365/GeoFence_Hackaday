@@ -7,15 +7,7 @@
     android:background="@drawable/background_new"
     tools:context=".login_success">
 
-    <ImageView
-        android:id="@+id/display_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user_view" />
+
 
     <TextView
         android:id="@+id/greet"
@@ -45,5 +37,43 @@
         app:layout_constraintBottom_toTopOf="@+id/greet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:drawableStart="@drawable/ic_upload"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="36dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCardView"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:cropToPadding="true"
+        app:cardCornerRadius="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/display_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="Display Image"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/user_view" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
